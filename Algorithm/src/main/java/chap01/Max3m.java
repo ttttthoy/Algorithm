@@ -1,6 +1,6 @@
 package chap01;
 
-public class ex1_2 {
+public class Max3m {
     static int max3(int a, int b, int c){
         int max = a;
         if(b > max) max = b;
