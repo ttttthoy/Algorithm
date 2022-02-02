@@ -10,7 +10,7 @@ public class TriangleLB {
         System.out.println("왼쪽 아래가 직각인 이등변 삼각형을 출력합니다.");
 
         do{
-            System.out.println("몇 단 삼각형이죠?");
+            System.out.print("몇 단 삼각형이죠? : ");
             n = stdin.nextInt();
         } while (n <= 0);
 
