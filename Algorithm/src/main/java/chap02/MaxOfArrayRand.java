@@ -20,9 +20,12 @@ public class MaxOfArrayRand {
         Scanner sc = new Scanner(System.in);
 
         System.out.println("랜덤 키 중 가장 큰키를 구합니다.");
+
         System.out.print("사람 수 :");
 
-        int num = sc.nextInt();
+        //int num = sc.nextInt();
+        //사람수도 랜덤하게 추가
+        int num = rdm.nextInt(21);
         int[] height = new int[num];
 
         System.out.println("키 값은 아래와 같습니다.");
