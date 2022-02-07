@@ -25,7 +25,10 @@ public class Q11 {
         System.out.println("입력한 정수의 자리수는 : " + arrn.size());
 
         //상용로그함수 이용법
-        //System.out.println("로그함수로 : " + (int)(Math.log10(n)+1));
+        System.out.println("로그함수로 : " + (int)(Math.log10(n)+1));
 
+        System.out.println("문자열을 입력해 주세요 : ");
+        String str = sc.next();
+        System.out.println("문자열의 자릿수는 : " + str.length() + "입니다");
     }
 }
