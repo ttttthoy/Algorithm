@@ -16,13 +16,16 @@ public class Q11 {
             n = sc.nextInt();
         }
 
-        ArrayList<Integer> arrn = new ArrayList<>();
+        //배열사이즈 이용법
+       ArrayList<Integer> arrn = new ArrayList<>();
         while( n > 0 ){
             arrn.add( n % 10 );
             n /= 10;
         }
         System.out.println("입력한 정수의 자리수는 : " + arrn.size());
 
+        //상용로그함수 이용법
+        //System.out.println("로그함수로 : " + (int)(Math.log10(n)+1));
 
     }
 }
