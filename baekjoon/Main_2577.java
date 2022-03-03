@@ -1,4 +1,6 @@
 package baekjoon;
+import java.io.BufferedReader;
+import java.io.InputStreamReader;
 import java.util.Scanner;
 
 public class Main_2577 {
@@ -21,5 +23,23 @@ public class Main_2577 {
             System.out.println(number[i]);
         }
 
+        //BufferedReader
+/*        BufferedReader buff = new BufferedReader(new InputStreamReader(System.in));
+        int A = Integer.parseInt(buff.readLine());
+        int B = Integer.parseInt(buff.readLine());
+        int C = Integer.parseInt(buff.readLine());
+        int result = A * B * C;
+
+        String str = Integer.toString(result);
+        int count = 0;
+        for (int i = 0; i<10; i++){
+            for (int k = 0; k<str.length(); k++){
+                if (str.charAt(k) - '0' == i)
+                    count++;
+
+            }
+            System.out.println(count);
+            count = 0;
+        }*/
     }
 }
