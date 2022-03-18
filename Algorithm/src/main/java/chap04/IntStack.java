@@ -36,6 +36,7 @@ public class IntStack {
         return -1;
     }
 
+    //추가필요
     public void clear() {
         ptr = 0;
     }
