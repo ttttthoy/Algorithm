@@ -29,6 +29,18 @@ public class IntStack {
         return stk[ptr++] = x;
     }
 
+    public int pop() throws EmptyIntStackException {
+        if (ptr <= 0)
+            throw new EmptyIntStackException();
+        return stk[--ptr];
+    }
+
+    public int peek() throws EmptyIntStackException {
+        if (ptr <= 0)
+            throw new EmptyIntStackException();
+        return stk[ptr - 1];
+    }
+
     public int indexOf(int x) {
         for (int i = ptr - 1; i >= 0; i--)
             if (stk[i] == x)
@@ -43,6 +55,18 @@ public class IntStack {
 
     public int capacity() {
         return max;
+    }
+
+    public int size() {
+        return ptr;
+    }
+
+    public boolean isEmpty() {
+        return ptr <= 0;
+    }
+
+    public boolean isFull() {
+        return ptr >= max;
     }
 
     public void dump() {
